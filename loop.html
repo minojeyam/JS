@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>loop</title>
+</head>
+<body>
+  <p id="demo32"></p>
+  <script>
+  var text=" ";
+  var i;
+  for (i=10; i > 0; i--) {
+    text += "this no is "+i+"<br>";
+  }
+  document.getElementById("demo32").innerHTML=text;
+  </script>
+
+  <p id="demo33"></p>
+  <script>
+  var text=" ";
+  var i;
+  for (i=0; i < 5; i++) {
+    text += "this no is "+i+"<br>";
+  }
+  document.getElementById("demo33").innerHTML=text;
+  </script>
+
+
+  <p id="demo34"></p>
+  <script>
+  {
+  var fruit=["apple","orange","mango","pineapple"];
+  var i;
+  var l=fruit.length;
+  var text=" ";
+
+  for(;i<l;){
+    text +=fruit[i]+"<br>";
+  i++;

@@ -1,0 +1,290 @@
+<html>
+<head>
+  <script>
+    function myFunction() {
+      document.getElementById("demo6").innerHTML="Para Changed";
+    }
+  </script>
+</head>
+<body>
+  <h2>What can JS do?</h2>
+  <p id="demo">JS can change HTML content</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML="Hello Javascript!"'>Click Me</button>
+  <BR>
+  <p id="demo1">JS can change HTML content</p>
+  <button type="button" onclick='document.getElementById("demo1").style.fontSize="35px"'>Click Me</button>
+  <BR>
+  <p id="demo2">JS can change HTML content</p>
+  <button type="button" onclick='document.getElementById("demo2").style.color="blue"'>Click Me</button>
+  <BR>
+  <p id="demo3">JS can change HTML content</p>
+  <button type="button" onclick='document.getElementById("demo3").style.display="none"'>Click Me</button>
+    <BR>
+    <p>JS can change HTML content</p>
+    <p id="demo4" style="display:none">Hello World</p>
+    <button type="button" onclick='document.getElementById("demo4").style.display="block"'>Click Me</button>
+    <br>
+    <p id="demo5"></p>
+    <script>
+   document.getElementById("demo5").innerHTML="My First JS";
+    </script>
+    <br>
+    <p id="demo6">A Para</p>
+    <button type="button" onclick="myFunction()">Try It</button>
+    <br>
+    <h2>external js</h2>
+    <p id="demo7">A Para</p>
+    <button type="button" onclick="myFunction()">Try It</button>
+    <br>
+    <script src="js.js"></script>
+    <p id="demo8"></p>
+    <script>
+    document.getElementById("demo8").innerHTML=5+6
+    </script>
+    <br>
+    <p id="demo9"></p>
+    <script>
+    document.getElementById("demo9").innerHTML="5+6"
+    </script>
+    <br>
+    <p id="demo10"></p>
+    <script>
+    document.getElementById("demo10").innerHTML="5"+"6"
+    </script>
+    <p id="demo11"></p>
+    <script>
+    document.getElementById("demo11").innerHTML=5+6
+    document.write(5+6)
+    window.alert(5+6)
+    console.log(5+6)
+    </script>
+    <p id="demo12"></p>
+    <button onclick="document.write(5+6);">Try It</button>
+    <br>
+    <p id="demo13"></p>
+    <script>
+    var x,y,z;
+    x=5;
+    y=6;
+    z=x+y;
+    document.getElementById("demo13").innerHTML=z
+    </script>
+    <script>
+    document.write="6+5="z
+    </script>
+    <p id="demo14"></p>
+    <script>
+    var txt1="Mino";
+    var txt2="Jeyam";
+    document.getElementById("demo14").innerHTML=txt1+" "+txt2;
+    </script>
+    <p id="demo15"></p>
+    <script>
+    txt1="What a nice ";
+    txt1 +="day";
+    document.getElementById("demo15").innerHTML=tx
+    t1;
+    </script>
+    <p id="demo16"></p>
+    <script>
+    var x=10;
+    x+=5
+    document.getElementById("demo16").innerHTML=x;
+    </script>
+    <p id="demo17"></p>
+    <script>
+    var carName1="Volvo XC60";
+    var carName2="Volvo XC60";
+    var answer1="Its alright";
+    var answer2="Its alright";
+    document.getElementById("demo17").innerHTML=
+    carName1+"<br>"+
+    carName2+"<br>"+
+    answer1+"<br>"+
+    answer2+"<br>";
+    </script>
+    <p id="demo17"></p>
+    <script>
+    var carName1="Volvo XC60";
+    var carName2="Volvo XC60";
+    var answer1="Its alright";
+    var answer2="Its alright";
+    document.getElementById("demo17").innerHTML=
+    carName1+"<br>"+
+    carName2+"<br>"+
+    answer1+"<br>"+
+    answer2+"<br>";
+    </script>
+    <p id="demo18"></p>
+    <script>
+    var carName1="Volvo XC60";
+    var carName2="Volvo XC60";
+    var answer1="Its alright";
+    var answer2="Its alright";
+    document.getElementById("demo18").innerHTML=
+    carName1+"<br>"+carName2+"<br>"+answer1+"<br>"+answer2+"<br>";
+    </script>
+    <p id="demo19"></p>
+    <script>
+    var cars=["Saab","Volvo","BMW"];
+    document.getElementById("demo19").innerHTML=cars;
+    </script>
+    <p id="demo20"></p>
+    <script>
+    var cars=["Saab"+"<br>"+"Volvo"+"<br>"+"BMW"]
+    document.getElementById("demo20").innerHTML=cars;
+    </script>
+    <p id="demo21"></p>
+    <script>
+    var cars=["Saab","Volvo","BMW"];
+    document.getElementById("demo21").innerHTML=
+    cars[0]+"<br>"+
+    cars[1]+"<br>"+
+    cars[2];
+    </script>
+    <p id="demo22"></p>
+    <script>
+    var person={
+        firstName:"Maryann",
+        lastName:"Minerva",
+        age:60,
+        eyecolor:"brown"
+    };
+    document.getElementById("demo22").innerHTML=
+    person.firstName+"  is "+person.age+" years old."+"<br>"
+    person.firstName+" eye's color is "+" "+person.eyecolor;
+    </script>
+    <p id="demo23"></p>
+    <script>
+    var person={
+        firstName:"Maryann",
+        lastName:"Minerva",
+        age:60,
+        eyecolor:"brown"
+    };
+    document.getElementById("demo23").innerHTML=
+    person.firstName+" eye's color is "+person.eyecolor;
+    </script>
+    <p id="demo30"></p>
+    <script>
+    var person={
+        firstName:"Maryann",
+        lastName:"Minerva",
+        age:60,
+        eyecolor:"brown"
+    };
+    document.getElementById("demo30").innerHTML=
+    person["firstName"]+" "+person["lastName"]
+    </script>
+
+    <p id="demo24"></p>
+    <script>
+    document.getElementById("demo24").innerHTML=
+    typeof 0+"<br>"+
+    typeof 314+"<br>"+
+    typeof 3.14+"<br>"+
+    typeof (3)+"<br>"+
+    typeof (3+4)+"<br>"+
+    typeof "John"+"<br>"+
+    typeof [1,2,3,4]+"<br>"+
+    typeof true+"<br>"+
+    typeof {name:"John",age:21}+"<br>"+
+    typeof function myfun(){};
+    </script>
+    <p id="demo26"></p>
+    <script>
+    function myFunction(p1,p2) {
+    return p1*p2;
+    }
+    document.getElementById("demo26").innerHTML=myFunction(5,4)
+    </script>
+
+    <p id="demo25"></p>
+    <script>
+    function myFunction(p1,p2) {
+    return p1*p2/2
+    }
+    document.getElementById("demo25").innerHTML=myFunction(5,4)
+    </script>
+    <p id="demo27"></p>
+    <script>
+    function myFunction(f) {
+    return (f-32)*5/9
+    }
+    document.getElementById("demo27").innerHTML=myFunction(75)
+    </script>
+
+    <p id="demo28"></p>
+    <script>
+    var person={
+        firstName:"Abi",
+        lastName:"Karish",
+        age:27,
+        city:"Jaffna"
+    };
+    var person2={
+        firstName:"Raji",
+        lastName:"Karish",
+        age:26,
+        city:"Nallur"
+    };
+    document.getElementById("demo28").innerHTML=
+    "Name:- "+person["firstName"]+" "+person["lastName"]+"<br>"+
+    "Age:- "+person["age"]+"<br>"+
+    "City:- "+person["city"]+"<br>"+"<br>"+
+    "Name:- "+person2["firstName"]+" "+person2["lastName"]+"<br>"+
+    "Age:- "+person2["age"]+"<br>"+
+    "City:- "+person2["city"];
+    </script>
+
+    <p id="demo29"></p>
+    <script>
+    var person={
+        firstName:"Abi",
+        lastName:"Karish",
+        age:27,
+        city:"Jaffna",
+        firstNamee:"Raji",
+        lastNamee:"Karish",
+        agee:26,
+        cityy:"Nallur"
+    };
+    document.getElementById("demo29").innerHTML=
+    "Name:- "+person["firstName"]+" "+person["lastName"]+"<br>"+
+    "Age:- "+person["age"]+"<br>"+
+    "City:- "+person["city"]+"<br>"+"<br>"+
+    "Name:- "+person["firstNamee"]+" "+person["lastNamee"]+"<br>"+
+    "Age:- "+person["agee"]+"<br>"+
+    "City:- "+person["cityy"];
+    </script>
+
+    <p id="demo31"></p>
+    <script>
+    var person=[
+        firstName:"Abi",
+        lastName:"Karish",
+        age:27,
+        city:"Jaffna",
+        firstName:"Raji",
+        lastName:"Karish",
+        age:26,
+        city:"Nallur"
+    ];
+    document.getElementById("demo31").innerHTML=
+    "Name:- "+person[0]+" "+person[1]+"<br>"+
+    "Age:- "+person[2]+"<br>"+
+    "City:- "+person[3]+"<br>"+"<br>"+
+    "Name:- "+person[4]+" "+person[5]+"<br>"+
+    "Age:- "+person[6]+"<br>"+
+    "City:- "+person[7];
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

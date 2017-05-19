@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Number Selection</p>
+<p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction(){
+    var text;
+    var no = 23;
+    if (no < 10) {
+        text = "Small";
+    } else if (no < 20) {
+        text = "Middle";
+    } else {
+        text = "Big";
+    }
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+<br>
+<br>
+
+<p id="demo2"></p>
+<script>
+var person={
+    coursename:"BIT",
+    coursefee:"Rs 150 000",
+    startdate:"12.06.2017",
+    center:"our office"
+};
+document.getElementById("demo2").innerHTML =
+"Course Name: "+person["coursename"]+"<br>"+
+"Course Fee: "+person["coursefee"]+"<br>"+
+"Start Date: "+person["startdate"]+"<br>"+
+"Center: "+person["center"];
+</script>
+
+
+</body>
+</html>

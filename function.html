@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS Functions</title>
+  </head>
+  <body>
+  <p id="demo30"></p>
+  <script>
+  var numb;
+  switch(new Date().getMonth())
+  {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+    numb="31 days";
+    break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+    numb="30 days";
+    break;
+    case 2:
+    numb="28/29 days";
+    break;
+    default:
+    numb="unknown";
+    }
+    //document.getElementById("demo30").innerHTML="this month is "+month+"<br>";
+
+    document.getElementById("demo30").innerHTML="this month has "+numb;
+    </script>
+  </body>
+  </html>
